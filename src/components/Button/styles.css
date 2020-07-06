@@ -1,0 +1,277 @@
+/* components/Button/styles.css */
+
+.button {
+  font: 400 14px Arial, sans-serif;
+  padding: 6px 12px; /*.375rem ,75rem;*/
+  line-height: 1.5;
+  margin: 0;
+
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: .25s;
+
+  box-sizing: border-box;
+}
+
+.button:focus,
+.button:active:focus,
+.button.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.button:hover,
+.button:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.button:active,
+.button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.button.disabled,
+.button[disabled],
+.button:disabled,
+fieldset[disabled] .button{
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+
+button[color],
+button[color]:focus,
+button[color]:hover,
+button[color]:active,
+button[color].active {
+  color: #FFF;
+}
+
+button[color]:hover {
+  text-decoration: none;
+}
+
+button[color]:focus,
+button[color]:focus:active {
+  outline: thin;
+}
+
+button[color="default"],
+button[color="default"]:focus {
+  background: #E0E0E0;
+  color: #212529;
+  border-color: #E0E0E0;
+}
+
+button[color="default"]:hover {
+  background: #AEAEAE;
+  color: #212529;
+  border-color: #A0A0A0;
+}
+
+button[color="default"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(174, 174, 174, .5);
+}
+
+button[color="default"]:active,
+button[color="default"].active {
+  background: #A0A0A0;
+  color: #212529;
+  border-color: #939890;
+}
+
+button[color="primary"],
+button[color="primary"]:focus {
+  background: #007BFF;
+  border-color: #007BFF;
+}
+
+button[color="primary"]:hover {
+  background: #0069D9;
+  border-color: #0062CC;
+}
+
+button[color="primary"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5);
+}
+
+button[color="primary"]:active,
+button[color="primary"].active {
+  background: #0062CC;
+  border-color: #005CBF;
+}
+
+button[color="secondary"],
+button[color="secondary"]:focus {
+  background: #6C757D;
+  border-color: #6C757D;
+}
+
+button[color="secondary"]:hover {
+  background: #5A6268;
+  border-color: #545B62;
+}
+
+button[color="secondary"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, .5);
+}
+
+button[color="secondary"]:active,
+button[color="seconary"].active {
+  background: #545B62;
+  border-color: #4E555B;
+}
+
+button[color="success"],
+button[color="success"]:focus {
+  background: #28A745;
+  border-color: #28A745;
+}
+
+button[color="success"]:hover {
+  background: #218838;
+  border-color: #1E7E34;
+}
+
+button[color="success"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .5);
+}
+
+button[color="success"]:active,
+button[color="success"].active {
+  background: #1E7E34;
+  border-color: #1C7430;
+}
+
+button[color="danger"],
+button[color="danger"]:focus {
+  background: #DC3545;
+  border-color: #DC3545;
+}
+
+button[color="danger"]:hover {
+  background: #C82333;
+  border-color: #BD2130;
+}
+
+button[color="danger"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .5);
+}
+
+button[color="danger"]:active,
+button[color="danger"].active {
+  background: #BD2130;
+  border-color: #B21F2D;
+}
+
+button[color="warning"],
+button[color="warning"]:focus {
+  background: #FFC107;
+  color: #212529;
+  border-color: #FFC107;
+}
+
+button[color="warning"]:hover {
+  background: #E0A800;
+  color: #212529;
+  border-color: #D39E00;
+}
+
+button[color="warning"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, .5);
+}
+
+button[color="warning"]:active,
+button[color="warning"].active {
+  background: #D39E00;
+  color: #212529;
+  border-color: #C69500;
+}
+
+button[color="info"],
+button[color="info"]:focus {
+  background: #17A2B8;
+  border-color: #17A2B8;
+}
+
+button[color="info"]:hover {
+  background: #138496;
+  border-color: #117A8B;
+}
+
+button[color="info"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, .5);
+}
+
+button[color="info"]:active,
+button[color="info"].active {
+  background: #117A8B;
+  border-color: #10707F;
+}
+
+button[color="light"],
+button[color="light"]:focus {
+  background: #F8F9FA;
+  color: #212529;
+  border-color: #F8F9FA;
+}
+
+button[color="light"]:hover {
+  background: #E2E6EA;
+  color: #212529;
+  border-color: #DAE0E5;
+}
+
+button[color="light"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, .5);
+}
+
+button[color="light"]:active,
+button[color="light"].active {
+  background: #DAE0E5;
+  color: #212529;
+  border-color: #D3D9DF;
+}
+
+button[color="dark"],
+button[color="dark"]:focus {
+  background: #343A40;
+  border-color: #343A40;
+}
+
+button[color="dark"]:hover {
+  background: #23272B;
+  border-color: #1D2124;
+}
+
+button[color="dark"]:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, .5);
+}
+
+button[color="dark"]:active,
+button[color="dark"].active {
+  background: #545B62;
+  border-color: #4E555B;
+}
