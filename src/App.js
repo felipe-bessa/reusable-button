@@ -10,19 +10,19 @@ function App() {
       <h1>Reusable Buttons</h1>
       <div className="buttonGrid">
         <Button />
-        <Button color="primary">
+        <Button color="primary" size="md">
           Primary
         </Button>
-        <Button color="secondary">
+        <Button color="secondary" size="sm">
           Secondary
         </Button>
-        <Button color="success">
+        <Button color="success" size="lg">
           Success
         </Button>
         <Button color="danger">
           Danger
         </Button>
-        <Button color="warning">
+        <Button color="warning" size="lg">
           Warning
         </Button>
         <Button color="info">
@@ -31,7 +31,7 @@ function App() {
         <Button color="light">
           Light
         </Button>
-        <Button color="dark">
+        <Button color="dark" size="sm">
           Dark
         </Button>
       </div>
