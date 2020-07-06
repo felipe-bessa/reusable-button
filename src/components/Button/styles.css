@@ -290,3 +290,8 @@ button[color="dark"].active {
   line-height: 1.5;
   border-radius: .2rem;
 }
+
+/* DISABLE SHADOW CSS */
+.disable-shadow {
+  box-shadow: none !important;
+}

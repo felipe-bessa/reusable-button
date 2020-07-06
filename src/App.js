@@ -19,7 +19,7 @@ function App() {
         <Button color="success" size="lg">
           Success
         </Button>
-        <Button color="danger">
+        <Button color="danger" disableShadow>
           Danger
         </Button>
         <Button color="warning" size="lg">

@@ -6,14 +6,16 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const Button = ({ variant, disabled, color, size, className, children, ...props}) => {
+const Button = ({ variant, disabled, color, size, disableShadow, className, children, ...props}) => {
   const sizeClass = size === undefined ? '' : ` button-${size}`;
-  console.log(sizeClass);
+  const disableShadowClass = disableShadow ? ' disable-shadow' : '';
+  console.log(disableShadowClass);
   return(
     <div>
-      <button className={`button${sizeClass}${className === undefined ? '' : ' ' + className}`} 
+      <button className={`button${sizeClass}${disableShadowClass}${className === undefined ? '' : ' ' + className}`} 
               color={color === undefined ? 'default' : color} 
-              size={size === undefined ? 'md' : size} disabled={disabled}>
+              size={size === undefined ? 'md' : size} 
+              disabled={disabled}>
         { children }
       </button>
     </div>
