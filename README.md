@@ -13,7 +13,7 @@ Crie um botão reutilizável com todos os estados no design e uma página exibin
   - [X] Posso ter diferentes tamanhos de botões
   - [X] Posso ter várias cores
   - [X] Posso ver indicadores visuais quando passo o mouse por cima ou enfoco o botão
-  - [ ] Eu posso continuar acessando todos os [button attributes]
+  - [X] Eu posso continuar acessando todos os [button attributes]
 
 Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 

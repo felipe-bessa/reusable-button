@@ -16,7 +16,7 @@ function App() {
         <Button color="secondary" size="sm">
           Secondary
         </Button>
-        <Button color="success" size="lg">
+        <Button color="success" size="lg" name="Sucesso">
           Success
         </Button>
         <Button color="danger" disableShadow>
